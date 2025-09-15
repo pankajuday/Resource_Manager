@@ -1,0 +1,22 @@
+{
+    "appId": "com.electron.resource-manager",
+    "productName": "Resource Manager",
+    "extraResources": ["dist-electron/preload.cjs", "src/assets/**"],
+    "icon": "./icon.png",
+    "files": [
+        "dist-electron",
+        "dist-react"
+    ],
+    "mac": {
+        "target": "dmg"
+    },
+    "win": {
+        "target": ["portable", "msi"]
+    },
+    "linux": {
+        "target": "AppImage",
+        "category": "Utility"
+    }
+
+
+}
